@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/booter.css"/>
+    <link rel="stylesheet" href="css/commen.css"/>
+    <link rel="stylesheet" href="css/servers.css"/>
+    <title></title>
+</head>
+<body>
+<header id="app">
+    <div v-html="html"></div>
+</header>
+
+<content>
+    <div id="con">
+        <div>
+            <my-content v-for="(elem,i of tasks)" :tasks="tasks"></my-content>
+            <template id="conFirst">
+                <div>
+                    <h3>NATUREX-CLUB SERVED</h3>
+                    <p class="m-0 pb-3 pt-1">
+                        <span class="h1 float-left m-0">{{i+1}}.</span>
+                        <a href="" class="d-block">MANUFACTURING & INDUSTRIAL</a>
+                        Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoquepenatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui.
+                    </p>
+                </div>
+            </template>
+        </div>
+        <div></div>
+    </div>
+</content>
+
+<footer id="abb">
+    <div v-html="html"></div>
+</footer>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/servers.js"></script>
+</body>
+</html>

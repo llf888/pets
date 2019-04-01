@@ -1,0 +1,126 @@
+#tou_1{
+    background:url(../images/blur.png);
+    background-size:100% 100%;
+    max-width:100%
+}
+#tou_1:before,#tou_3:before{
+    display:table;
+    content:"";
+}
+
+
+.tou_2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 6rem;
+    background: rgba(2, 252, 222, 0.34);
+}
+.tou_2>div:nth-child(2){
+    color:white;
+    font-size:1.5rem;
+    text-align:center;
+}
+/* 图2的大屏样式*/
+@media screen and (min-width:992px) {
+    .tou_2>div:first-child{
+        margin:5rem 0 5rem 8rem;
+    }
+    .tou_2>div:nth-child(2){
+        margin:5rem 5rem 5rem 0;
+    }
+}
+/* 图2的中小屏样式*/
+@media screen and (max-width:991px){
+    .tou_2>div{
+        display:block;
+        width:100%;
+        margin:1.5rem auto;
+        text-align:center;
+    }
+}
+/*图3大图样式*/
+#tou_3{
+    width: 100%;
+    background:rgba(2, 252, 222, 0.34);
+}
+.tou_3{
+    background:rgba(0,0,0,0.25) !important;
+    width:100%;
+    text-align:center;
+    position:relative;
+}
+.tou_3>a,.bar>a{
+    height:4.5rem;
+    color:white;
+    display:inline-block;
+    width:10%;
+    font-size:1.3rem;
+    margin:0.25rem 0;
+    line-height:4.5rem;
+}
+.bar>a{
+    width:100%;
+}
+.tou_3>a:hover,.tou_3>a:first-child,.bar>a:hover{
+    text-decoration:none;
+    background:rgba(0,0,0,0.4);
+    border-radius:0.2rem;
+}
+.bar{
+    width:10%;
+    display:inline-block;
+    position:relative;
+    z-index:10;
+}
+
+.bar>ul{
+    background:rgba(2, 252, 222,0.6);
+    position:absolute;
+    list-style:none;
+    color:white;
+    margin:0 auto;
+    font-size:1.7rem;
+    width:100%;
+    display:none;
+    border-radius:0.3rem;
+}
+.bar:hover ul{
+    display:block;
+}
+.bar>ul>li{
+    height:3.5rem;
+}
+.bar>ul>li:hover{
+    background:rgba(0,0,0,0.4);
+}
+
+
+/*图3中屏*/
+@media screen and (min-width:787px) and (max-width:991px){
+    .tou_3>a{
+        height:4rem;
+        width:49%;
+        margin:0.25rem 0;
+        line-height:4rem;
+    }
+    .bar{
+        width:49%;
+    }
+}
+/*图3小屏*/
+@media screen and (max-width:786px){
+    .tou_3>a{
+        height:4rem;
+        width:100%;
+        margin:0 0 0.25rem 0;
+        line-height:4rem;
+    }
+    .bar:hover ul{
+        position:relative;
+    }
+    .bar{
+        display:block;
+        width:100%;
+    }
+}

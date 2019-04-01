@@ -1,0 +1,16 @@
+#con{
+    width:100%;
+    padding:5rem;
+    background:#E3F7CE;
+    display:flex;
+}
+#con>div:first-child{
+    width:75%;
+    padding:3rem 0.5rem 3rem 1rem;
+    background:#fff;
+}
+#con>div:last-child{
+    width:25%;
+    padding:3rem 1rem 3rem 0.5rem;
+    background:#fff;
+}

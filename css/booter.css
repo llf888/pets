@@ -1,0 +1,68 @@
+#ceng_1{
+    background:url(../images/blur1.png);
+    background-size: 100% 100%;
+    text-align: center;
+    color:white;
+    padding:5rem 0;
+}
+#ceng_1>h6{
+    margin:0 10%;
+}
+#ceng_2{
+    background:rgb(0,0,0);
+    color:white;
+    display:flex;
+    flex-wrap:nowrap;
+    padding:4rem;
+}
+#ceng_2>div:first-child{
+    width:60%;
+    text-align: center;
+}
+#ceng_2>div:last-child{
+    width:40%;
+}
+#ceng_2>div:last-child>div{
+    display:flex;
+}
+#ceng_2>div:last-child>div [href=javascript]{
+    width:15%;
+}
+#ceng_2>div:last-child>div>a:last-child{
+    width:40%;
+    text-align:right;
+    padding-right:10%;
+}
+@media screen and (max-width:1200px){
+    #ceng_2{
+        flex-wrap:wrap;
+    }
+    #ceng_2>div:first-child{
+        width:100%;
+    }
+    #ceng_2>div:last-child{
+        padding:5rem 5rem 0rem 5rem;
+        width:100%;
+    }
+    #ceng_2>div:last-child>div [href=javascript]{
+        width:20%;
+        text-align: center;
+    }
+    #ceng_2>div:last-child>div>a:last-child{
+        width:20%;
+        padding-right:1rem;
+    }
+}
+@media screen and (max-width:687px){
+    #ceng_2>div:last-child{
+        padding:5rem 0rem 0rem 0rem;
+    }
+    #ceng_2>div:last-child>div [href=javascript]{
+        width:20%;
+        text-align: center;
+    }
+    #ceng_2>div:last-child>div>a:last-child{
+        width:20%;
+        text-align: center;
+    }
+}

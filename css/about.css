@@ -1,0 +1,107 @@
+body{
+    background:#E3F7CE;
+}
+.detail{
+    margin:5rem 7rem;
+    display:flex;
+    justify-content: center;
+    background:white;
+}
+.detail>div:first-child a{
+    display:block;
+    background:cyan;
+    color:white;
+    width:45%;
+    height:3rem;
+    border-radius:0.2rem;
+    line-height:3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top:3rem;
+}
+.detail>div:first-child a:hover{
+    background:#000;
+}
+.detail>div:first-child{
+    width:30%;
+    padding:2rem 0 2rem 3rem;
+}
+.detail>div:nth-child(2){
+    width:35%;
+    padding:2rem 0 2rem 3rem;
+}
+.detail>div:last-child{
+    width:35%;
+    padding:2rem 0 2rem 2rem;
+}
+.detail>div:last-child img{
+    filter:grayscale(100%);
+    margin:0.5rem 1rem 1rem 0;
+    transition:all 1s linear;
+}
+.detail>div:last-child img:hover{
+    filter:grayscale(0%);
+}
+.detail>div:last-child>div{
+    display:flex;
+    margin-bottom:2rem;
+}
+@media screen and (max-width:1200px){
+    .detail{
+        flex-wrap: wrap;
+    }
+    .detail>div:first-child{
+        width:45%;
+    }
+    .detail>div:nth-child(2){
+        width:45%;
+    }
+    .detail>div:last-child{
+         width:100%;
+        padding:2rem 2rem 2rem 3rem;
+     }
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    .detail{
+        flex-wrap: wrap;
+        margin-left:5rem;
+        margin-right:5rem;
+    }
+}
+@media screen and (min-width:676px) and (max-width:991px) {
+    .detail{
+        flex-wrap: wrap;
+        margin:4rem;
+    }
+    .detail>div:first-child{
+        width:100%;
+        padding:2rem 2rem 2rem 3rem;
+    }
+    .detail>div:nth-child(2){
+        width:100%;
+        padding:2rem 2rem 2rem 3rem;
+    }
+    .detail>div:last-child{
+        width:100%;
+        padding:2rem 2rem 2rem 3rem;
+    }
+}
+@media screen and (max-width:675px){
+    .detail{
+        flex-wrap: wrap;
+        margin:3rem;
+    }
+    .detail>div:first-child{
+        width:100%;
+        padding:2rem 2rem 2rem 3rem;
+    }
+    .detail>div:nth-child(2){
+        width:100%;
+        padding:2rem 2rem 2rem 3rem;
+    }
+    .detail>div:last-child{
+        width:100%;
+        padding:2rem 2rem 2rem 3rem;
+    }
+}
+
